@@ -9,12 +9,9 @@ function App() {
       <div className="header__container">
         <img className="header" src={we3} alt="we3" />
       </div>
-      <video className="video" autoPlay loop muted>
+      <video className="video" autoPlay loop muted playsinline>
         <source src={backgroundVideo} type="video/mp4"></source>
       </video>
-      <div className="form__container">
-        <form></form>
-      </div>
     </div>
   );
 }
