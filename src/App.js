@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import backgroundVideo from "./backgroundVideo.mp4";
+import we3 from "./we3Logo.webp";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="header__container">
+        <img className="header" src={we3} alt="we3" />
+      </div>
+      <video className="video" autoPlay loop muted>
+        <source src={backgroundVideo} type="video/mp4"></source>
+      </video>
+      <div className="form__container">
+        <form></form>
+      </div>
     </div>
   );
 }
